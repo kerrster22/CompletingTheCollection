@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 26 28 30; /* Dark background #1A1C1E */
+    --foreground: 229 229 229; /* Light text #E5E5E5 */
+    --card: 38 40 42; /* Slightly lighter than background #262A2E */
+    --card-foreground: 229 229 229;
+    --popover: 38 40 42;
+    --popover-foreground: 229 229 229;
+    --primary: 215 68 62; /* #D7443E - keeping the cinematic red */
+    --primary-foreground: 229 229 229;
+    --secondary: 73 78 85; /* Darker steel gray #494E55 */
+    --secondary-foreground: 229 229 229;
+    --muted: 73 78 85;
+    --muted-foreground: 172 180 191; /* #ACB4BF */
+    --accent: 172 180 191; /* #ACB4BF */
+    --accent-foreground: 26 28 30;
+    --destructive: 215 68 62;
+    --destructive-foreground: 229 229 229;
+    --border: 73 78 85;
+    --input: 38 40 42;
+    --ring: 215 68 62;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Custom Criterion-inspired styles */
+.criterion-border {
+  border: 2px solid rgb(73 78 85);
+}
+
+.criterion-divider {
+  height: 2px;
+  background-color: rgb(172 180 191);
+}
+
+.criterion-button {
+  transition: all 0.2s ease-in-out;
+}
+
+.criterion-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(215, 68, 62, 0.3);
+}
