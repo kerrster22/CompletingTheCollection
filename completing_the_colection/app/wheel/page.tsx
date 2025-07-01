@@ -3,7 +3,6 @@
 import { useState } from "react"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { AdvancedThemeSelector } from "@/components/advanced-theme-selector"
 import { FilmGrainOverlay } from "@/components/film-grain-overlay"
 import { mainCollectionFilms, type Film } from "@/data/films"
 import { Card, CardContent } from "@/components/ui/card"
